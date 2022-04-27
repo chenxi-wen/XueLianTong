@@ -1,1 +1,1 @@
-include ':app',':xhttp2-lib'
+include ':app',':RxKit',':RxUI',':xhttp2-lib'

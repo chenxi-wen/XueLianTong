@@ -95,20 +95,21 @@ public class CountDownActivity extends BaseActivity {
     // 首次打开程序判断
     private void checkToJump() {
         boolean isFirstLogin = SharedPreferencesUtils.getBoolean(CountDownActivity.this, ModelConstant.FIRST_LOGIN, true);
-        // 首次打开，进入引导页
-        if (isFirstLogin) {
-            Intent it_to_guide = new Intent(CountDownActivity.this, GuideActivity.class);
-            startActivity(it_to_guide);
-            SharedPreferencesUtils.putBoolean(CountDownActivity.this, ModelConstant.FIRST_LOGIN, false);
-        }
-        // 非首次打开，登录回调判断
-        else {
-            if (isLogin) {
-                startActivity(new Intent(CountDownActivity.this, MainActivity.class));
-            } else {
-                startActivity(new Intent(CountDownActivity.this, LoginActivity.class));
-            }
-        }
+//        // 首次打开，进入引导页
+//        if (isFirstLogin) {
+//            Intent it_to_guide = new Intent(CountDownActivity.this, GuideActivity.class);
+//            startActivity(it_to_guide);
+//            SharedPreferencesUtils.putBoolean(CountDownActivity.this, ModelConstant.FIRST_LOGIN, false);
+//        }
+//        // 非首次打开，登录回调判断
+//        else {
+//            if (isLogin) {
+//                startActivity(new Intent(CountDownActivity.this, MainActivity.class));
+//            } else {
+//                startActivity(new Intent(CountDownActivity.this, LoginActivity.class));
+//            }
+//        }
+        startActivity(new Intent(CountDownActivity.this, LoginActivity.class));
         // 回收内存
         destroyTimer();
         finish();

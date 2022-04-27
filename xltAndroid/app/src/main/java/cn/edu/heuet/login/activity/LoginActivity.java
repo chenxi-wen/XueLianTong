@@ -189,7 +189,7 @@ public class LoginActivity extends BaseActivity
                         editor.putString("encryptedPassword", encryptedPassword);
 
                         if (editor.commit()) {
-                            Intent it_login_to_main = new Intent(LoginActivity.this, MainActivity.class);
+                            Intent it_login_to_main = new Intent(LoginActivity.this, MineActivity.class);
                             startActivity(it_login_to_main);
                             // 登录成功后，登录界面就没必要占据资源了
                             finish();

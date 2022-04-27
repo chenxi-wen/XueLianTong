@@ -4,7 +4,7 @@ public class NetConstant {
     //public static final String baseService = "http://220b1a3541.iok.la";
     //public static final String baseService = "http://127.0.0.1:8070";
     public static final String baseService = "http://10.0.2.2:8070";
-
+    //public static final String baseService = "http://432996kj35.51vip.biz:54581";
     private static final String getOtpCodeURL     = "/user/getOtp";
     private static final String loginURL          = "/user/login";
     private static final String registerURL       = "/user/register";
